@@ -2,6 +2,7 @@ import './App.css'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import Recipe from './pages/Recipe'
+import SearchNoResult from './pages/SearchNoResult'
 import SearchResult from './pages/SearchResult'
 
 function App() {
@@ -9,7 +10,8 @@ function App() {
     <div>
       <Header />
       {/* <Recipe /> */}
-      <SearchResult/>
+      {/* <SearchResult/> */}
+      <SearchNoResult/>
       <Footer />
     </div>
   )
