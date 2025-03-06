@@ -80,7 +80,7 @@ const SearchResult = () => {
         <div className="container">
             <div className="row m-5">
                 <div className="col-3">
-                    <div className="border rounded p-2">
+                    <div className="border rounded p-3">
                         <div className="d-flex align-items-center my-2">
                             <img src="../img/List 1.png" alt="list icon" style={{ width: "20px" }} />
                             <h5 className="m-0 mx-2 fw-bold">FILTERS</h5>
