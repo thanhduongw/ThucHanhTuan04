@@ -2,6 +2,7 @@ import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from "../components/Card";
 import Pagination from "../components/Pagination";
+import { Link } from "react-router-dom";
 
 const Recipe = () => {
 
@@ -55,13 +56,13 @@ const Recipe = () => {
                 <div className="navbar-collapse" id="navbarNav">
                     <ul className="nav">
                         <li className="nav-item">
-                            <a className="nav-link text-secondary" href="#">Home</a>
+                            <Link className="nav-link text-secondary" to="/">Home</Link>
                         </li>
                         <li className="nav-item pt-2">
                             <img src='../img/Arrow forward ios 2.png' alt="Button" />
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#" style={{ color: '#F44B87' }}>Your Recipe Box</a>
+                            <Link className="nav-link" to="/recipe" style={{ color: '#F44B87' }}>Your Recipe Box</Link>
                         </li>
                     </ul>
                 </div>
