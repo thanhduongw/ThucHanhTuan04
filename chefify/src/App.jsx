@@ -10,8 +10,8 @@ function App() {
     <div>
       <Header />
       {/* <Recipe /> */}
-      {/* <SearchResult/> */}
-      <SearchNoResult/>
+      <SearchResult/>
+      {/* <SearchNoResult/> */}
       <Footer />
     </div>
   )
