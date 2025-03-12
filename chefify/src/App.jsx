@@ -4,15 +4,20 @@ import Header from './components/Header'
 import Recipe from './pages/Recipe'
 import SearchNoResult from './pages/SearchNoResult'
 import SearchResult from './pages/SearchResult'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div>
-      <Header />
-      {/* <Recipe /> */}
-      <SearchResult/>
-      {/* <SearchNoResult/> */}
-      <Footer />
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<SearchNoResult />} />
+          <Route path="/recipe" element={<Recipe />} />
+          <Route path="/search"element={<SearchResult />} />
+        </Routes>
+        <Footer />
+      </Router>
     </div>
   )
 
